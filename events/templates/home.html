@@ -1,0 +1,39 @@
+{% extends 'core/base.html' %}
+{% block title %} home {% endblock title %} 
+{% block content %}
+
+       <div align="center" >
+   
+              <div class="jumbotron">
+              <div class="container">
+               <h1>Hello!! Asmin Events For {{month}}
+                       {{year}}</h1>
+                       
+               
+              </div>
+              </div>
+              <hr>
+          
+       </div>
+       <div align="center">
+              
+              <h1> As of</h1> {{ time }}
+       </div>
+       <hr>
+       
+       <div align="center">
+              <div class="jumbotron">
+                     <hr>
+               {{ cal|safe }}
+               <hr>
+              </div>
+       </div>
+       <br>
+       <br>
+       
+       <div align="center">
+              <div class="jumbotron">
+                      Copyright (c) {{ current_year }}
+              </div>
+
+{% endblock content %}

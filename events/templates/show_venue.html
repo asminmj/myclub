@@ -1,0 +1,29 @@
+{% extends 'core/base.html' %}
+{% block title %} Venue {% endblock title %} 
+{% block content %}
+<div class="jumbotron">
+    <div class="card text-left ">
+        <div class="card-header">
+          Venue
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{ venue }}</h5>
+          <p class="card-text">
+            <ul>
+              <li>{{ venue.name }} <br></li>
+              <li>{{ venue.phone }} <br></li>          
+              <li>{{ venue.address }} <br></li>
+              <li>{{ venue.zip_code }} <br></li>
+              
+            
+              
+            
+            </ul>
+          </p>
+        
+        </div>
+    
+      </div>
+   </div>
+
+{% endblock content %}

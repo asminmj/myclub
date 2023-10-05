@@ -1,0 +1,22 @@
+{% extends 'core/base.html' %}
+{% block title %} home {% endblock title %} 
+{% block content %}
+<div class="jumbotron">
+    <h1 align="center"> Update Venue </h1>
+</div>
+<br>
+<form action="" method=POST>
+    {% csrf_token %}
+    <div class="jumbotron">
+        <div class="container">
+            {{ form.as_p }}
+        </div>
+    </div>
+    <br>
+   <div align="center">
+    <input type="Submit" value="Update" class="btn btn-secondary">
+   </div>
+
+</form>
+
+{% endblock content %}
